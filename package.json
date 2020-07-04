@@ -2,12 +2,18 @@
   "name": "wewatch",
   "version": "1.0.0",
   "dependencies": {
-    "@redocly/openapi-cli": "^0.12.16"
+    "@redocly/openapi-cli": "^0.12.16",
+    "deploy-to-gh-pages": "^1.3.7"
   },
   "private": true,
   "scripts": {
-    "start": "openapi preview-docs",
-    "build": "openapi bundle -o dist",
+    "deploy": "yarn build && deploy-to-gh-pages dist",
+    "start": "gulp serve",
+    "build": "./scripts/build.sh",
     "test": "openapi validate"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
   }
 }
