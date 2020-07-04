@@ -5,17 +5,17 @@
 ### Install
 
 1. Install [Node JS](https://nodejs.org/).
-2. Clone this repo and run `npm install` in the repo root.
+2. Clone this repo and run `yarn install` in the repo root.
 
 ### Usage
 
-#### `npm start`
+#### `yarn start`
 Starts the reference docs preview server.
 
-#### `npm run build`
+#### `yarn build`
 Bundles the definition to the dist folder.
 
-#### `npm test`
+#### `yarn test`
 Validates the definition.
 
 ## Contribution Guide
